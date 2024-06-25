@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class CollegeUserCalculator {
+ public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the total number of users: ");
+        int totalUsers = scanner.nextInt();
+        System.out.print("Enter the number of teaching staff users: ");
+        int teachingStaffUsers = scanner.nextInt();
+        int nonTeachingStaffUsers = teachingStaffUsers / 3;
+        int totalStaffUsers = teachingStaffUsers + nonTeachingStaffUsers;
+ int studentUsers = totalUsers - totalStaffUsers;
+        System.out.println("Total number of users: " + totalUsers);
+        System.out.println("Number of teaching staff users: " + teachingStaffUsers);
+        System.out.println("Number of non-teaching staff users: " + nonTeachingStaffUsers);
+        System.out.println("Total number of staff users: " + totalStaffUsers);
+        System.out.println("Number of student users: " + studentUsers);
+    }
+}
